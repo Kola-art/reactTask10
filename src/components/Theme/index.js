@@ -13,8 +13,6 @@ export const ThemeContext = React.createContext (
     themes.dark
 );
 
-
-
 class ThemedButton extends React.Component {
     render(){
         let props = this.props;
@@ -22,7 +20,6 @@ class ThemedButton extends React.Component {
         return(
             <body className = {css.body} style={{backgroundColor: theme.background}}>
             < button { ...props } className = {css.btn} />
-         
             </body>
         );
     }
